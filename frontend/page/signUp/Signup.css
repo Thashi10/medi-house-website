@@ -1,0 +1,26 @@
+body {
+    background-color: #f8f9fa;
+}
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.eye-icon {
+    cursor: pointer;
+    padding: 0px;
+
+}
+
+.btn {
+    background-color: #5b21b6;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #6009eb;
+    color: white;
+}
