@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Signup.css">
+    <title>Sign Up</title>
+
+</head>
+
+<body>
+
+    <div class="min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="form-container">
+            <h2 class="text-center  mb-4" style="color: #5b21b6;">Create an account</h2>
+            <p class="text-center text-muted mb-4">Enter your credentials to continue</p>
+            <hr>
+            <div id="error-message" class="alert alert-danger d-none"></div>
+
+            <form id="signup-form">
+                <div class="form-row mb-3">
+                    <div class="col">
+                        <input type="text" name="firstName" placeholder="First Name" class="form-control" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="lastName" placeholder="Last Name" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phoneNumber" placeholder="Phone Number" class="form-control" required>
+                </div>
+                <div class="form-group position-relative">
+                    <input type="password" name="password" placeholder="Password" class="form-control" required
+                        id="password-input">
+                    <span class="eye-icon position-absolute" style="right: 10px; top: 10px;"
+                        onclick="togglePasswordVisibility('password-input', 'password-eye')">
+                        <img id="password-eye" src="../../img/eye-fill.svg" alt="Toggle Password Visibility"
+                            style="width: 20px; height: 20px;">
+                    </span>
+                </div>
+                <div class="form-group position-relative">
+                    <input type="password" name="confirmPassword" placeholder="Confirm Password" class="form-control"
+                        required id="confirm-password-input">
+                    <span class="eye-icon position-absolute" style="right: 10px; top: 10px;"
+                        onclick="togglePasswordVisibility('confirm-password-input', 'confirm-password-eye')">
+                        <img id="confirm-password-eye" src="../../img/eye-fill.svg" alt="Toggle Password Visibility"
+                            style="width: 20px; height: 20px;">
+                    </span>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="terms" class="form-check-input" required>
+                    <label for="terms" class="form-check-label">I agree to all the
+                        <span class="text-primary">Terms</span> and
+                        <span class="text-primary">Privacy Policies</span></label>
+                </div>
+                <button type="submit" id="submit-button" class="btn  btn-block">Create account</button>
+            </form>
+
+            <p class="text-center mt-4 text-muted">Already have an account?
+                <a href="../login/Login.html" style="color: #5b21b6;">Login</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="Signup.js">
+    </script>
+
+</body>
+
+</html>

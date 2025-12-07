@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Login.css">
+    <title>Login</title>
+
+</head>
+
+<body>
+    <div class="min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="form-container">
+            <div class="text-center mb-2">
+              <a href="../home/Home.html"> <img class="img-fluid mx-auto mb-2" src="../../img/logo.jpg" alt="icon" style="width: 250px; height: 150px;" /></a> 
+                <h2 class="h3 font-weight-bold" style="color: #5b21b6;">Welcome Back</h2>
+            </div>
+            <p class="text-center text-muted mb-4">Enter your credentials to continue</p>
+            <hr> <br>
+            <div id="error-message" class="alert alert-danger d-none"></div>
+            <form id="signup-form">
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="john.doe@gmail.com" class="form-control" required>
+                </div>
+                <div class="form-group position-relative">
+                    <input type="password" name="password"  placeholder="••••••••••••••••••••" class="form-control" required
+                        id="password-input">
+                    <span class="eye-icon position-absolute" style="right: 10px; top: 10px;"
+                        onclick="togglePasswordVisibility('password-input', 'password-eye')">
+                        <img id="password-eye" src="../../img/eye-fill.svg" alt="Toggle Password Visibility"
+                            style="width: 20px; height: 20px;">
+                    </span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="form-check">
+                        <input id="remember-me" type="checkbox" class="form-check-input" />
+                        <label for="remember-me" class="form-check-label">Remember me</label>
+                    </div>
+                    <a href="/forgotpassword" style="color: #5b21b6;">Forgot Password?</a>
+                </div>
+                <button type="submit" id="submit-button" class="btn btn-primary w-100">Sign In</button>
+            </form>
+            <p class="text-center mt-4 text-muted">You haven't account <a href="../signUp/Signup.html" style="color: #5b21b6;">Signup</a></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="Signup.js">
+    </script>
+
+</body>
+
+</html>

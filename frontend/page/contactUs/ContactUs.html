@@ -1,0 +1,244 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi House</title>
+    <link rel="icon" href="../../img/logo.jpg" type="image">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="ContactUs.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="header-container">
+            <div class="left-content">
+                <i class="bi bi-envelope"><img src="../../img/envelope.svg" alt=""></i> medihouse@gmail.com
+            </div>
+            <div class="right-content">
+                <img src="../../img/truck.svg" alt=""> Emergancy 011 3456789
+            </div>
+        </div>
+
+        <!--nav bar-->
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="../home/Home.html">
+                    <img src="../../img/logo.jpg" alt="logo" width="100" height="100" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" onclick="toggleSidebar()" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" id="homeLink" href="../home/Home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="channelingLink" href="../channeling/Channeling.html">E-Channeling</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contactLink" href="ContactUs.html">Contact US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profileLink" href="../profile/Profile.html">Profile</a>
+                            </li>
+                        </ul>
+    
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+
+        <div id="sidebar" class="sidebar">
+            <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+            <ul class="sidebar-menu">
+                <li class="nav-item"><a class="nav-link" id="homeLink" href="../home/Home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" id="channelingLink" href="../channeling/Channeling.html">E-Channeling</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" id="contactLink" href="../contactUs/ContactUs.html">Contact US</a></li>
+                <li class="nav-item"><a class="nav-link" id="profileLink" href="../profile/Profile.html">Profile</a></li>
+
+            </ul>
+        </div>
+
+    </header>
+    <div id="main-content">
+        <div class="containeeer">
+            <div class="div1">
+                <h2>Welcome to MEDI House</h2>
+                <h3>"Where Wellness Begins"</h3>
+            </div>
+            <br>
+
+            <div class="containeer">
+                <div class="contact-container">
+                    <div class="contact-info slide-in-left">
+                        <div class="info-text">
+                            <p class="info-title">Contact Information</p>
+                            <p class="info-description">
+                                Fill up the form and our team will get back to you within 24 hours.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#" class="contact-link">
+                                <span class="icon">📞</span>
+                                <div>+94 11 34 56 789</div>
+                            </a>
+                            <a href="#" class="contact-link">
+                                <span class="icon">✉️</span>
+                                <div>medihouse@gmail.com</div>
+                            </a>
+                        </div>
+                        <br /><br />
+                        <div class="image-container">
+                            <img src="../../img/contactus.png" alt="Contact Us" class="contact-image" />
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/" target="_blank" class="icon-circle"><img
+                                    src="../../img/facebook.png" height="25px" alt="Facebook"></a>
+                            <a href="https://instagram.com/" target="_blank" class="icon-circle"><img
+                                    src="../../img/instagram.png" height="25px" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <form class="contact-form slide-in-right" method="POST" id="form">
+
+                        <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="6c570277-5e4c-4606-b9b7-8a64512c175c">
+
+                        <div class="form-group">
+                            <p>Name</p>
+                            <input type="text" placeholder="Thashini Dinethma" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <p>Email</p>
+                            <input type="email" placeholder="example@gmail.com" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <p>Phone</p>
+                            <input type="text" placeholder="+94 77 77 77 777" name="phone" required />
+                        </div>
+                        <div class="form-group">
+                            <p>Message</p>
+                            <textarea placeholder="Write your message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit</button>
+                        <div id="result"></div>
+                    </form>
+                    
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="address">
+                <b>ADDRESS</b><br>
+                Medihouse (PVT)LTD<br>
+                Medihouse Galle<br>
+            </div>
+            <div class="cont">
+                <b>CONTACT DETAILS</b><br>
+                011 3456789 <br>
+                Email: medihouse@gmail.com
+            </div>
+            <div class="location">
+                <b>LOCATION</b><br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7935.081569096259!2d80.2144669742961!3d6.0575489112335505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173dbc89c9de5%3A0xcacc6537e6f21745!2sBeligaha%20Junction!5e0!3m2!1sen!2slk!4v1727972405734!5m2!1sen!2slk"
+                    width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </footer>
+    </div>
+
+    <div id="copyright">
+        &copy; copyright 2024. Designed by Thashini.
+    </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            const mainContent = document.getElementById("main-content");
+            sidebar.classList.toggle("active");
+            mainContent.classList.toggle("shifted");
+        }
+
+
+        document.addEventListener('scroll', function () {
+            const contactContainer = document.querySelector('.contact-container');
+
+            // Check if the contact container is in view
+            const rect = contactContainer.getBoundingClientRect();
+
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                contactContainer.classList.add('visible'); // Add class to trigger animations
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    // Remove 'active' class from all links
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+                    // Add 'active' class to the clicked link
+                    this.classList.add('active');
+                });
+            });
+
+            // Optionally set active state based on current URL
+            const currentURL = window.location.href;
+            navLinks.forEach(link => {
+                if (link.href === currentURL) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        //get message 
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            result.innerHTML = "Please wait..."
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = "Form submitted successfully";
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function () {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 3000);
+                });
+        });
+    </script>
+</body>
+
+</html>
